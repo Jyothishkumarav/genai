@@ -12,7 +12,7 @@ controller = FeatureController()
 def generate_description(features):
     llm = ChatGroq(
         temperature=0,
-        groq_api_key='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',
+        groq_api_key='gsk_Q',
         model_name="llama-3.1-70b-versatile"
     )
     prompt_feature = PromptTemplate.from_template(
