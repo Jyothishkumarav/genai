@@ -2,7 +2,7 @@ import requests
 
 # Define the API URL for the desired model
 API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
-API_KEY = "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"
+API_KEY = ""
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
 
 def get_embeddings(text):
