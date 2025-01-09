@@ -1,8 +1,12 @@
-import requests
+import os
 
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 # Define the API URL for the desired model
 API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
-API_KEY = ""
+API_KEY =  os.getenv("HUG_API_KEY")
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
 
 def get_embeddings(text):
